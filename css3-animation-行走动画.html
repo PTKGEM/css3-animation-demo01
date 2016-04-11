@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>css3-animation-行走动画</title>
+	<style type="text/css">
+		.sprite {
+		  width:245px;
+		  height:400px;
+		  display:block;    
+		  background:transparent url(http://www.w3cplus.com/sites/default/files/blogs/2015/1506/walker.png) 0 0 no-repeat;  
+		  margin:3em auto;
+		  animation: walker 1s steps(5) infinite;
+		}
+
+
+		@keyframes walker {
+		  from {background-position:0 0;}
+		  to {background-position:0 -4000px;}
+		}
+	</style>
+</head>
+<body>
+	<div class="sprite"></div>
+</body>
+</html>
